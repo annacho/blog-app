@@ -19,9 +19,9 @@ axios.interceptors.request.use(request => {
 });
 
 axios.interceptors.response.use(response => {
-  console.log(request);
+  console.log(response);
   // Edit request config
-  return request;
+  return response;
 }, error => {
   console.log(error);
   return Promise.reject(error);
